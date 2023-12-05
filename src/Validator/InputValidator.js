@@ -36,7 +36,7 @@ const InputValidator = Object.freeze({
   },
   // 숫자인지 확인한다.
   isNumber(count) {
-    if (isNaN(count)) {
+    if (Number.isNaN(Number(count))) {
       throw new Error(ERROR_MESSAGE.inValidNumber);
     }
   },
